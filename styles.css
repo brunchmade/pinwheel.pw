@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'San Francisco Display', 'San Francisco Text', 'SF UI Display', 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font: -apple-system-body;
+  font-family: '-apple-system', 'San Francisco Display', 'San Francisco Text', 'SF UI Display', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -34,20 +33,6 @@ h1 {
   font-family: 'San Francisco Display', 'San Francisco Text', 'SF UI Display', 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.keyword .emoji {
-  width: 1.1em;
-  height: 1.1em;
-  background-size: 1.1em !important;
-  display: inline-block;
-  vertical-align: -.2em;
-}
-
-@media screen and (max-width: 960px){
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-
 @media screen and (max-width: 780px){
   h1 {
     font-size: 2rem;
@@ -55,165 +40,9 @@ h1 {
   }
 }
 
-@media screen and (max-width: 550px){
-  h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-}
-
-.typed-cursor{
-  opacity: 1;
-  font-weight: 200;
-  color: #1068ce;
-  -webkit-animation: blink 1.15s steps(1) infinite;
-  -moz-animation: blink 1.15s steps(1) infinite;
-  animation: blink 1.15s steps(1) infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@media screen and (max-height: 500px){
-  body {
-    height: 500px;
-  }
-}
-
-/* suggestions bubble
-/  --------------------------------------------*/
-.suggestionsBubbleContainer {
-  position: relative;
-  width: calc(100% - 40px);
-  height: 98px;
-  margin: 0 1rem;
-  opacity: 1;
-}
-
-.suggestionsBubble {
-  background: #f5f5f7;
-  font-size: 13px;
-  font-family: 'San Francisco Display', 'San Francisco Text', 'SF UI Display', 'Roboto', 'SF UI Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: light;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: default;
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-  height: 98px;
-  border: 1px solid #D8D8D8;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.125);
-  overflow: hidden;
-  text-align: left;
-}
-
-.topBar {
-  background: #edeef0;
-  border-bottom: 1px solid #d4d4d6;
-  padding: 0 10px;
-  margin-bottom: 0;
-  font-size: 11px;
-}
-
-.topBar p {
-  display: inline-block;
-  margin: 0;
-  color: #979899;
-  line-height: 30px;
-  font-size: 13px;
-}
-
-.suggestionsBubble .typed-cursor { display: none; }
-
-.instructions {
-  float: right;
-}
-
-@media screen and (max-width: 500px){
-  .instructions { display: none;}
-}
-
-.instructions p {
-  margin-left: 20px;
-}
-
-.instructions b {
-  border: 1px solid #d4d4d6;
-  background: #ffffff;
-  border-radius: 4px;
-  font-size: 10px;
-  display: inline-block;
-  padding: 4px 6px;
-  color: #555555;
-  line-height: 12px;
-  -webkit-box-shadow: 0 1.5px 0 0 #d4d4d6;
-  -moz-box-shadow:    0 1.5px 0 0 #d4d4d6;
-  box-shadow:         0 1.5px 0 0 #d4d4d6;
-}
-
-.emojiList {
-  margin: 5px;
-  text-align: left;
-  padding: 0;
-}
-
-.suggestionsBubble li {
-  display: inline-block;
-  margin: 0 3px 3px 0;
-  padding: 3px 9px;
-  border-radius: 20px;
-  color: #000000;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.suggestionsBubble li:hover,
-.suggestionsBubble li:focus,
-.suggestionsBubble li.active,
-.suggestionsBubble li:first-child {
-  background: #016ecc;
-  color: #FFFFFF;
-}
-
-.suggestionsBubble li:hover,
-.suggestionsBubble li:focus {
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  transition: all .1s;
-}
-
-.drop {
-  position: absolute;
-  background: url("./drop.png") no-repeat center;
-  background-size: contain;
-  border-top: 1px solid #f5f5f7;
-  width: 31px;
-  height: 17px;
-  bottom: -15px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
 #producthunt {
   display: none;
-  max-width: 340px;
+  max-width: 380px;
   text-align: left;
   padding: 6px 6px 6px 50px;
   margin: 0 auto;
@@ -224,15 +53,6 @@ h1 {
   background-size: 26px;
   border: 1px solid #F6DEAC;
   border-radius: 4px;
-}
-
-@media screen and (max-width: 500px){
-  #producthunt {
-    margin: 0 1rem 1rem;
-    background-size: 22px;
-    padding: 6px 6px 6px 42px;
-    background-position: left 10px center;
-  }
 }
 
 #producthunt a {
@@ -284,6 +104,17 @@ h1 {
 .demoContainer {
   position: relative;
   margin-top: 2rem;
+}
+
+.demoScreenshot {
+  max-width: 1000px;
+  max-height: 600px;
+  width: 80vw;
+  background: url('./images/screenshot.png') no-repeat center;
+  background-size: cover;
+  height: calc(80vw * .6);
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
 }
 
 iframe.demo {
