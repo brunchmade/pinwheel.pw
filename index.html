@@ -1,1 +1,87 @@
-hello
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create a live streaming radio station with friends.">
+    <meta property="og:title" content="Pinwheel">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pinwheel.fm/og-image.png">
+    <meta property="og:url" content="https://pinwheel.fm">
+    <meta property="og:description" content="Create a live streaming radio station with friends.">
+
+    <title>Create a live streaming radio station with friends &middot; Pinwheel</title>
+
+    <link href="https://d2v52k3cl9vedd.cloudfront.net/basscss/6.1.4/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./mojito-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="./mojito-icon-ios.png">
+  </head>
+  <body class="flex flex-column center fadeIn">
+
+    <header>
+      <div class="social">
+        <div class="fb-share-button" data-href="https://pinwheel.fm" data-layout="button_count"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://pinwheel.fm" data-text="Create a live streaming radio station with friends with Pinwheel!" data-dnt="true">Tweet</a>
+      </div>
+
+      <div class="h2 m2 left align">
+        <img src="images/pinwheel.png" class="splashLogo mr1"> Pinwheel
+      </div>
+
+      <span id="producthunt">Thanks for checking out Mojito! Feedback welcome on <a href="https://producthunt.com/" target="_blank">Product Hunt</a> 😻</span>
+    </header>
+
+    <main class="flex-auto flex flex-center flex-column">
+      <div class="demoContainer">
+        <iframe class="demo" src="https://app.pinwheel.fm"></iframe>
+        <div class="stoplights"></div>
+      </div>
+
+      <div class="mx-auto" style="width:100vw;">
+        <h1>Create a live streaming radio station with friends.</h1>
+        <p>Add tracks and playlists from SoundCloud. YouTube and Spotify coming soon.</p>
+        <a href="https://media.githubusercontent.com/media/brunchmade/pinwheel.fm/gh-pages/dist/Pinwheel.dmg" class="button button-big mb1 js-download">🐞 Download Beta for OS X 🐞</a>
+        <a href="https://cash.me/$Pinwheel" class="button button-outline button-big blue mb1 js-donate">Donate</a>
+      </div>
+    </main>
+
+    <footer>
+      <p class="h6 mt4 mb1">Created by <a href="https://twitter.com/wr" target="_blank">Wells Riley</a>, <a href="https://twitter.com/alexbaldwin" target="_blank">Alex Baldwin</a>, and <a href="https://twitter.com/ianhirschfeld" target="_blank">Ian Hirschfeld</a>.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Page Scripts -->
+    <script>
+      if(window.location.search.substring(1) == "ref=producthunt") {
+          $("#producthunt").fadeIn();
+        }
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-4881230-26', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!-- Facebook button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>
