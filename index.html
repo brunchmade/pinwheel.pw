@@ -33,7 +33,7 @@
 
     <span class="flex-none" id="producthunt">Thanks for checking out Pinwheel! Feedback welcome on <a href="https://producthunt.com/" target="_blank">Product Hunt</a> 😻</span>
 
-    <main class="flex-auto flex-center">
+    <main class="flex-auto flex-center demoWrapper">
       <div class="demoContainer">
         <!-- <div class="demoScreenshot mx-auto"></div> -->
         <iframe class="demo" src="https://app.pinwheel.fm"></iframe>
@@ -69,13 +69,12 @@
       }
 
       var html = $('.demoContainer').html();
-
-      $('.stoplights').click(function() {
+      $('.demoWrapper').delegate('.stoplights', 'click', function() {
         $('.demoContainer').hide().html('');
         $('.fail').show();
       });
 
-      $('.fail').click(function() {
+      $('.demoWrapper').delegate('.fail', 'click', function() {
         $('.fail').hide();
         $('.reboot').show();
         $('.audio').trigger('play');
