@@ -182,10 +182,18 @@ iframe.demo {
   background: #000;
   display: none;
   cursor: url('./images/cursor.png'), progress;
+  cursor: -webkit-image-set(
+    url('./images/cursor.png') 1x,
+    url('./images/cursor@2x.png') 2x
+  ), progress;
 }
 
 .reboot * {
   cursor: url('./images/cursor.png'), progress;
+  cursor: -webkit-image-set(
+    url('./images/cursor.png') 1x,
+    url('./images/cursor@2x.png') 2x
+  ), progress;
 }
 
 @keyframes reboot {
@@ -204,6 +212,7 @@ iframe.demo {
   background-position: top left;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .reboot-2 {
@@ -228,8 +237,8 @@ iframe.demo {
   background-position: 20px 20px;
   background-size: 32px;
   box-shadow: 0 0 0 1px black inset, 0 0 0 3px white inset, 0 0 0 5px black inset;
-  width: 50%;
-  min-width: 90%;
+  max-width: 600px;
+  width: 90%;
   height: 110px;
   font-family: "Pinwheel";
   position: absolute;
