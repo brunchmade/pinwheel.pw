@@ -1,5 +1,5 @@
 @font-face{
-  font-family:"Chicago";
+  font-family:"Pinwheel";
   src:url("./Chicago.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -229,9 +229,9 @@ iframe.demo {
   background-size: 32px;
   box-shadow: 0 0 0 1px black inset, 0 0 0 3px white inset, 0 0 0 5px black inset;
   width: 50%;
-  min-width: 320px;
+  min-width: 90%;
   height: 110px;
-  font-family: Chicago;
+  font-family: "Pinwheel";
   position: absolute;
   top: calc(50% - 50px);
   left: 50%;
