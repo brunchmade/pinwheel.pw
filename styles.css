@@ -177,6 +177,10 @@ iframe.demo {
   cursor: url('./images/cursor.png'), progress;
 }
 
+.reboot * {
+  cursor: url('./images/cursor.png'), progress;
+}
+
 @keyframes reboot {
   from { opacity: 0; }
   to { opacity: 1; }

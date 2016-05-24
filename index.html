@@ -41,6 +41,7 @@
       </div>
       <div class="fail"></div>
       <div class="reboot">
+        <audio class="audio" preload="auto"><source src="./Mac_OldStartup.mp3" type="audio/mpeg"></audio>
         <div class="reboot-1">
           <div class="reboot-2"></div>
           <div class="reboot-3">Welcome to Pinwheel.</div>
@@ -77,6 +78,7 @@
       $('.fail').click(function() {
         $('.fail').hide();
         $('.reboot').show();
+        $('.audio').trigger('play');
         setTimeout(function() {
           $('.reboot').hide();
           $('.demoContainer').html(html).show();
